@@ -1,0 +1,88 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "zcbnzr7mem",
+    "contentId": "builtin_single-choice-qdgMXf",
+    "invalidContentId": "",
+    "keywords": {
+      "lastdesign": [
+        "lastdesign",
+        "Go to the {{user.lastdesign}} Design Pattern"
+      ],
+      "new": [
+        "new",
+        "Discover a new one"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-qdgMXf {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "694394"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"zcbnzr7mem\",\"contentId\":\"builtin_single-choice-qdgMXf\",\"invalidContentId\":\"\",\"keywords\":{\"lastdesign\":[\"lastdesign\",\"Go to the {{user.lastdesign}} Design Pattern\"],\"new\":[\"new\",\"Discover a new one\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-zcbnzr7mem'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "onEnter": [],
+      "id": "200565"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"zcbnzr7mem\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-zcbnzr7mem']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "963251"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "454713"
+    }
+  ]
+}

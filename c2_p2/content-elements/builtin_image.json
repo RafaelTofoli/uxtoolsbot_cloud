@@ -1,0 +1,52 @@
+[
+  {
+    "id": "builtin_image-TY17QN",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/c2_p2/media/ldncus69u51h9lkns5jz-uxacceptence.png"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-25T15:16:42.581Z",
+    "modifiedOn": "2022-09-25T15:16:42.581Z"
+  },
+  {
+    "id": "builtin_image-J_Qcpr",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/c2_p2/media/x8p6ui8ml908du68i7lh-UXSpecific.png"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-25T15:17:07.205Z",
+    "modifiedOn": "2022-09-25T15:17:07.205Z"
+  },
+  {
+    "id": "builtin_image-II1Rl8",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/c2_p2/media/1yak5ldwu4lh7bc5jcl5-UXCentral.png"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-25T15:17:45.694Z",
+    "modifiedOn": "2022-09-25T15:17:45.694Z"
+  },
+  {
+    "id": "builtin_image-YdFIHf",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/c2_p2/media/0wdko5wd33p8z44h2j8d-UXTask.png"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-25T15:18:15.611Z",
+    "modifiedOn": "2022-09-25T15:18:15.611Z"
+  },
+  {
+    "id": "builtin_image-DjHF0r",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/c2_p2/media/6nu6o8nnbyubb37mw1yx-UXConcern.png"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-25T15:18:35.568Z",
+    "modifiedOn": "2022-09-25T15:18:35.568Z"
+  }
+]

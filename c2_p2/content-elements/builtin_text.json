@@ -1,0 +1,355 @@
+[
+  {
+    "id": "builtin_text-REa_oE",
+    "formData": {
+      "text$en": "Wellcome back to UXLERIS Design Pattern assistant, {{user.name}}.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-09T21:51:58.364Z",
+    "modifiedOn": "2022-09-09T21:51:58.364Z"
+  },
+  {
+    "id": "builtin_text-gn7rRo",
+    "formData": {
+      "text$en": " Last time that you've been here i recommended {{user.lastdesign}} Design Pattern.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-09T21:52:23.962Z",
+    "modifiedOn": "2022-09-09T21:52:23.962Z"
+  },
+  {
+    "id": "builtin_text-uviw5A",
+    "formData": {
+      "text$en": "Let's begin then.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-09T21:54:07.026Z",
+    "modifiedOn": "2022-09-09T21:54:07.026Z"
+  },
+  {
+    "id": "builtin_text-9rZvFT",
+    "formData": {
+      "text$en": "It seems that you’ve never been here before.",
+      "markdown$en": true,
+      "typing$en": true,
+      "variations$en": []
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-09T21:54:32.560Z",
+    "modifiedOn": "2022-09-09T21:54:32.560Z"
+  },
+  {
+    "id": "builtin_text-d0uyTL",
+    "formData": {
+      "text$en": "My job here is to help you optimize the accessibility of the UX Information in your project with the help of our Design Patterns.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-09T21:54:44.273Z",
+    "modifiedOn": "2022-09-09T21:54:44.273Z"
+  },
+  {
+    "id": "builtin_text-CinvYP",
+    "formData": {
+      "text$en": "Thank you! {{user.name}}",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-09T21:55:10.050Z",
+    "modifiedOn": "2022-09-09T21:55:10.050Z"
+  },
+  {
+    "id": "builtin_text-1s6CF8",
+    "formData": {
+      "text$en": "Can i have your name?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-09T21:55:33.100Z",
+    "modifiedOn": "2022-09-09T21:55:33.100Z"
+  },
+  {
+    "id": "builtin_text-dHeAh0",
+    "formData": {
+      "text$en": "Hello!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-09T21:56:56.270Z",
+    "modifiedOn": "2022-09-09T21:56:56.270Z"
+  },
+  {
+    "id": "builtin_text-F3hjm1",
+    "formData": {
+      "text$en": "Welcome to UXLERIS Design Pattern assistant!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-09T21:57:09.988Z",
+    "modifiedOn": "2022-09-09T21:57:09.988Z"
+  },
+  {
+    "id": "builtin_text-oQ-FP0",
+    "formData": {
+      "text$en": "Well, I know a design pattern that can help you, the <b>UX Acceptance Criteria</b>.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:22:58.219Z",
+    "modifiedOn": "2022-09-10T00:22:58.219Z"
+  },
+  {
+    "id": "builtin_text-kE-YY8",
+    "formData": {
+      "text$en": "So, you need to emphasize the UX activities represented by your tasks?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:23:34.975Z",
+    "modifiedOn": "2022-09-10T00:23:34.975Z"
+  },
+  {
+    "id": "builtin_text-itgYsb",
+    "formData": {
+      "text$en": " I Know a pattern that can help you: <b>The UX Tasks</b>.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:23:52.370Z",
+    "modifiedOn": "2022-09-10T00:23:52.370Z"
+  },
+  {
+    "id": "builtin_text-mJmtwE",
+    "formData": {
+      "text$en": "Well, I think the UX Specific Repository can be very helpful for you!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:27:48.334Z",
+    "modifiedOn": "2022-09-10T00:27:48.334Z"
+  },
+  {
+    "id": "builtin_text-FLJDxw",
+    "formData": {
+      "text$en": " If you have a significant amount of UX information and work that might be too general to be in a User Stories, you can use the design pattern UX Concern.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:28:26.734Z",
+    "modifiedOn": "2022-09-10T00:28:26.734Z"
+  },
+  {
+    "id": "builtin_text-QYrZXm",
+    "formData": {
+      "text$en": " I think the UX Central Repository pattern could help you!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:29:01.857Z",
+    "modifiedOn": "2022-09-10T00:29:01.857Z"
+  },
+  {
+    "id": "builtin_text-or33w6",
+    "formData": {
+      "text$en": "Ok, come back anytime!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:30:51.175Z",
+    "modifiedOn": "2022-09-10T00:30:51.175Z"
+  },
+  {
+    "id": "builtin_text-H6eK_7",
+    "formData": {
+      "text$en": "It consists in adding UX oriented acceptance criterias in your User Stories. This new criteria would help the devs that access the User Story to visualize better the UX requirements of your feature!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:35:18.509Z",
+    "modifiedOn": "2022-09-10T00:35:18.509Z"
+  },
+  {
+    "id": "builtin_text-bs52Ak",
+    "formData": {
+      "text$en": "Here's an example:",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:35:27.646Z",
+    "modifiedOn": "2022-09-10T00:35:27.646Z"
+  },
+  {
+    "id": "builtin_text-MPuZe8",
+    "formData": {
+      "text$en": "IMAGEM",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:36:06.038Z",
+    "modifiedOn": "2022-09-10T00:36:06.038Z"
+  },
+  {
+    "id": "builtin_text-RgO5px",
+    "formData": {
+      "text$en": "It consists in creating a page in your repository for each one of your Epics, and there you can store the UX information specific to all User Stories related to each Epic.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:36:49.161Z",
+    "modifiedOn": "2022-09-10T00:36:49.161Z"
+  },
+  {
+    "id": "builtin_text-NxI2ro",
+    "formData": {
+      "text$en": "And after the creation you can create a link in all User Stories its respectives Epics pages, this way the devs will always be one link from the UX information!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:36:58.529Z",
+    "modifiedOn": "2022-09-10T00:36:58.529Z"
+  },
+  {
+    "id": "builtin_text-BMUItW",
+    "formData": {
+      "text$en": "It consists in the creation of a specific UX Task label that should be applied in the tasks that represent activities related to UX!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:37:45.452Z",
+    "modifiedOn": "2022-09-10T00:37:45.452Z"
+  },
+  {
+    "id": "builtin_text-2M2pVk",
+    "formData": {
+      "text$en": "It consists in defining a new element in the same hierarchical level of a User Story, called UX Concern, that you can use to plan, estimate and prioritize independently.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:38:35.888Z",
+    "modifiedOn": "2022-09-10T00:38:35.888Z"
+  },
+  {
+    "id": "builtin_text-n2UMKp",
+    "formData": {
+      "text$en": "It consists in creating a page in your repository where you store all the UX Information that influences multiple parts of your project, for example buttons designs, or color pallets.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:39:06.751Z",
+    "modifiedOn": "2022-09-10T00:39:06.751Z"
+  },
+  {
+    "id": "builtin_text-WxJSH9",
+    "formData": {
+      "text$en": "And after your creation you can create a link in all UserStories to this page, this way the devs will always be one link from the UX information!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:39:16.425Z",
+    "modifiedOn": "2022-09-10T00:39:16.425Z"
+  },
+  {
+    "id": "builtin_text-2MjpTf",
+    "formData": {
+      "text$en": "What would you like to know about the {{user.lastdesign}} Design Pattern?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:46:26.539Z",
+    "modifiedOn": "2022-09-10T00:46:26.539Z"
+  },
+  {
+    "id": "builtin_text-Lio8tD",
+    "formData": {
+      "text$en": "Please enter a number related to one of the following actions:",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:46:37.316Z",
+    "modifiedOn": "2022-09-10T00:46:37.316Z"
+  },
+  {
+    "id": "builtin_text-XoXSqj",
+    "formData": {
+      "text$en": "1 - Context \n2 - Aplication \n3 - Consequences of it's application \n4 - Similar Design Patterns \n5 - Example \n0 - End conversation",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:46:58.604Z",
+    "modifiedOn": "2022-09-10T00:46:58.604Z"
+  },
+  {
+    "id": "builtin_text-n6FkGQ",
+    "formData": {
+      "text$en": "Invalid input, please try again.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:55:22.480Z",
+    "modifiedOn": "2022-09-10T00:55:22.480Z"
+  },
+  {
+    "id": "builtin_text-82I6UZ",
+    "formData": {
+      "text$en": "Come back anytime!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:56:36.346Z",
+    "modifiedOn": "2022-09-10T00:56:36.346Z"
+  },
+  {
+    "id": "builtin_text-6ybGiY",
+    "formData": {
+      "text$en": "Here's a image exemplifying the Pattern applied:",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-25T15:11:48.209Z",
+    "modifiedOn": "2022-09-25T15:11:48.209Z"
+  },
+  {
+    "id": "builtin_text-dJ9fiK",
+    "formData": {
+      "text$en": "Something else?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-25T15:31:43.276Z",
+    "modifiedOn": "2022-09-25T15:31:43.276Z"
+  }
+]

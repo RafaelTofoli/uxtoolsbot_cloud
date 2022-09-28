@@ -1,0 +1,325 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "7011379f5f",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-c2f258"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "skill-c2f258",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-c2f258",
+      "flow": "skills/choice-c2f258.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Whole p...]",
+          "condition": "temp['skill-choice-ret-gvy0fe1f9h'] == \"Whole project\"",
+          "node": "choice-6d684c"
+        },
+        {
+          "caption": "User picked [Specific]",
+          "condition": "temp['skill-choice-ret-gvy0fe1f9h'] == \"Specific\"",
+          "node": "choice-eb7885"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-eb7885",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-eb7885",
+      "flow": "skills/choice-eb7885.flow.json",
+      "next": [
+        {
+          "caption": "User picked [User St...]",
+          "condition": "temp['skill-choice-ret-6v5c7p9ffl'] == \"User Stories and Tasks\"",
+          "node": "choice-06625f"
+        },
+        {
+          "caption": "User picked [Documen...]",
+          "condition": "temp['skill-choice-ret-6v5c7p9ffl'] == \"Documentation Repositories\"",
+          "node": "UX_Specific_Repository"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-06625f",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-06625f",
+      "flow": "skills/choice-06625f.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Accepta...]",
+          "condition": "temp['skill-choice-ret-jr2fyhc423'] == \"Acceptance Criteria\"",
+          "node": "Acceptance_Criteria"
+        },
+        {
+          "caption": "User picked [Tasks]",
+          "condition": "temp['skill-choice-ret-jr2fyhc423'] == \"Tasks\"",
+          "node": "UX_Tasks"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "658372ce98",
+      "name": "Acceptance_Criteria",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Acceptance_Criteria_2"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-oQ-FP0"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "9e391a84af",
+      "name": "UX_Tasks",
+      "next": [
+        {
+          "condition": "true",
+          "node": "UX_Tasks_2"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-kE-YY8",
+        "say #!builtin_text-itgYsb"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-6d684c",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-6d684c",
+      "flow": "skills/choice-6d684c.flow.json",
+      "next": [
+        {
+          "caption": "User picked [User St...]",
+          "condition": "temp['skill-choice-ret-brokzlo1fx'] == \"User Stories and Tasks\"",
+          "node": "UX_concern"
+        },
+        {
+          "caption": "User picked [Documen...]",
+          "condition": "temp['skill-choice-ret-brokzlo1fx'] == \"Documentation Repositories\"",
+          "node": "UX_Central_Repository"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "306813e6c5",
+      "name": "UX_Specific_Repository",
+      "next": [
+        {
+          "condition": "true",
+          "node": "UX_Specific_Repository_2"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-mJmtwE"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "458d53ead8",
+      "name": "UX_concern",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Ux_concern_2"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-FLJDxw"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "77ebc5675d",
+      "name": "UX_Central_Repository",
+      "next": [
+        {
+          "condition": "true",
+          "node": "UX_Central_Repository_2"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-QYrZXm"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-78d0cc",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-78d0cc",
+      "flow": "skills/choice-78d0cc.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Yes]",
+          "condition": "temp['skill-choice-ret-v5rhqbjpu5'] == \"Yes\"",
+          "conditionType": "raw",
+          "node": "Design-Pattern-Details.flow.json"
+        },
+        {
+          "caption": "User picked [No]",
+          "condition": "temp['skill-choice-ret-v5rhqbjpu5'] == \"No\"",
+          "node": "node-c4e8"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "123f2f2168",
+      "name": "node-c4e8",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-or33w6"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "f4f8738578",
+      "name": "Acceptance_Criteria_2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-78d0cc"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-H6eK_7",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"lastdesign\",\"value\":\"UX Acceptance Criteria\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "d85758c8bb",
+      "name": "UX_Specific_Repository_2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-78d0cc"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-RgO5px",
+        "say #!builtin_text-NxI2ro",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"lastdesign\",\"value\":\"UX Specific Repository\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "163a713922",
+      "name": "UX_Tasks_2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-78d0cc"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-BMUItW",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"lastdesign\",\"value\":\"UX Tasks\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "4cfb053099",
+      "name": "Ux_concern_2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-78d0cc"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-2M2pVk",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"lastdesign\",\"value\":\"UX Concern\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "b82f9e0836",
+      "name": "UX_Central_Repository_2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-78d0cc"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-n2UMKp",
+        "say #!builtin_text-WxJSH9",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"lastdesign\",\"value\":\"UX Central Repository\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

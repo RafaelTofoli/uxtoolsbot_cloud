@@ -1,0 +1,333 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "d08458cea5",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "Design_info"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "0433aa87ed",
+      "name": "Design_info",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choices"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-2MjpTf",
+        "say #!builtin_text-Lio8tD",
+        "say #!builtin_text-XoXSqj"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "c17e56cee8",
+      "name": "choices",
+      "next": [
+        {
+          "condition": "event.preview === \"1\"",
+          "conditionType": "raw",
+          "node": "Context"
+        },
+        {
+          "condition": "event.preview === \"2\"",
+          "conditionType": "raw",
+          "node": "Application"
+        },
+        {
+          "condition": "event.preview === \"3\"",
+          "conditionType": "raw",
+          "node": "Consequences"
+        },
+        {
+          "condition": "event.preview === \"4\"",
+          "conditionType": "raw",
+          "node": "Similar"
+        },
+        {
+          "condition": "event.preview === \"5\"",
+          "conditionType": "raw",
+          "node": "Example"
+        },
+        {
+          "condition": "event.preview === \"0\"",
+          "conditionType": "raw",
+          "node": "Bye"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "Invalid"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "45d0efaaec",
+      "name": "Context",
+      "next": [
+        {
+          "condition": "true",
+          "node": "execute_code"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"prop\",\"value\":\"context\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "832aa50bdc",
+      "name": "Application",
+      "next": [
+        {
+          "condition": "true",
+          "node": "execute_code"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"prop\",\"value\":\"application\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "965baeccb5",
+      "name": "Consequences",
+      "next": [
+        {
+          "condition": "true",
+          "node": "execute_code"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"prop\",\"value\":\"consequences\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "8977e24093",
+      "name": "Similar",
+      "next": [
+        {
+          "condition": "true",
+          "node": "execute_code"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"prop\",\"value\":\"relatedPatterns\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "bdde3c73e2",
+      "name": "Bye",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-82I6UZ"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "f60fc602e9",
+      "name": "Example",
+      "next": [
+        {
+          "condition": "true",
+          "node": "node-53af"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"prop\",\"value\":\"example\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "75e5bb4be4",
+      "name": "Invalid",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choices"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-n6FkGQ"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "cb5cbe9600",
+      "name": "node-53af",
+      "next": [
+        {
+          "condition": "user.lastdesign === \"UX Acceptance Criteria\"",
+          "conditionType": "props",
+          "node": "img1"
+        },
+        {
+          "condition": "user.lastdesign   === \"UX Specific Repository\"",
+          "conditionType": "props",
+          "node": "img2"
+        },
+        {
+          "condition": "user.lastdesign  ===\"UX Central Repository\"",
+          "conditionType": "props",
+          "node": "img3"
+        },
+        {
+          "condition": "user.lastdesign  ===\"UX Tasks\"",
+          "conditionType": "props",
+          "node": "img4"
+        },
+        {
+          "condition": "user.lastdesign  === \"UX Concern\"",
+          "conditionType": "props",
+          "node": "img5"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "e347957148",
+      "name": "img1",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Something_else"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-6ybGiY",
+        "say #!builtin_image-TY17QN"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "8c2542fb5c",
+      "name": "img3",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Something_else"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-6ybGiY",
+        "say #!builtin_image-II1Rl8"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "45c004414f",
+      "name": "img2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Something_else"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-6ybGiY",
+        "say #!builtin_image-J_Qcpr"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "a5bcc74e47",
+      "name": "img4",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Something_else"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-6ybGiY",
+        "say #!builtin_image-YdFIHf"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "9c953820c3",
+      "name": "img5",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Something_else"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-6ybGiY",
+        "say #!builtin_image-DjHF0r"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "9cff3134e4",
+      "name": "execute_code",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Something_else"
+        }
+      ],
+      "onEnter": [
+        "getProps {\"pattern\":\"{{user.lastdesign}}\",\"prop\":\"{{user.prop}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "153ae7e700",
+      "name": "Something_else",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "choices"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-dJ9fiK",
+        "say #!builtin_text-XoXSqj"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    }
+  ]
+}

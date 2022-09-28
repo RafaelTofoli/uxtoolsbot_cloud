@@ -1,0 +1,99 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "d07mfwjs7f",
+    "contentId": "builtin_single-choice-BIY5Q7",
+    "invalidContentId": "",
+    "keywords": {
+      "Acceptance Criteria": [
+        "Acceptance Criteria",
+        "UX Acceptance Criteria"
+      ],
+      "tasks": [
+        "tasks",
+        "UX Tasks"
+      ],
+      "Central Repository": [
+        "Central Repository",
+        "Central UX Repository"
+      ],
+      "Specific Repository": [
+        "Specific Repository",
+        "UX Specific Repository"
+      ],
+      "UX Concern": [
+        "UX Concern"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-BIY5Q7 {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "741412"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"d07mfwjs7f\",\"contentId\":\"builtin_single-choice-BIY5Q7\",\"invalidContentId\":\"\",\"keywords\":{\"Acceptance Criteria\":[\"Acceptance Criteria\",\"UX Acceptance Criteria\"],\"tasks\":[\"tasks\",\"UX Tasks\"],\"Central Repository\":[\"Central Repository\",\"Central UX Repository\"],\"Specific Repository\":[\"Specific Repository\",\"UX Specific Repository\"],\"UX Concern\":[\"UX Concern\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-d07mfwjs7f'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "onEnter": [],
+      "id": "783831"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"d07mfwjs7f\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-d07mfwjs7f']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "153764"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "540527"
+    }
+  ]
+}

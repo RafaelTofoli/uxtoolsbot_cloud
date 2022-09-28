@@ -1,0 +1,219 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "entry",
+      "next": [
+        {
+          "condition": "user.greeted === \"true\"",
+          "conditionType": "raw",
+          "node": "node-cce7"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "node-39e3"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "d865450420",
+      "name": "node-cce7",
+      "next": [
+        {
+          "condition": "true",
+          "node": "node-e975"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-REa_oE"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "f5f9717c9a",
+      "name": "node-e975",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-4da32b"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-gn7rRo"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-4da32b",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-4da32b",
+      "flow": "skills/choice-4da32b.flow.json",
+      "next": [
+        {
+          "caption": "User picked [lastdes...]",
+          "condition": "temp['skill-choice-ret-zcbnzr7mem'] == \"lastdesign\"",
+          "conditionType": "raw",
+          "node": "Design-Pattern-Details.flow.json"
+        },
+        {
+          "caption": "User picked [new]",
+          "condition": "temp['skill-choice-ret-zcbnzr7mem'] == \"new\"",
+          "node": "node-d338"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "fdf7a44fed",
+      "name": "node-d338",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-6ef3d3"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-uviw5A"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "c93d76b64c",
+      "name": "node-29b8",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-6ef3d3"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-9rZvFT",
+        "say #!builtin_text-d0uyTL"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "ff532bfdb6",
+      "name": "node-ead1",
+      "next": [
+        {
+          "condition": "true",
+          "node": "node-29b8"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-CinvYP"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "f51da2bcf8",
+      "name": "node-49e7",
+      "next": [
+        {
+          "condition": "true",
+          "node": "node-ead1"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-1s6CF8"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"name\",\"value\":\"{{event.preview}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "68ff266df3",
+      "name": "node-39e3",
+      "next": [
+        {
+          "condition": "true",
+          "node": "node-49e7"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"greeted\",\"value\":\"true\"}",
+        "say #!builtin_text-dHeAh0",
+        "say #!builtin_text-F3hjm1"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-6ef3d3",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-6ef3d3",
+      "flow": "skills/choice-6ef3d3.flow.json",
+      "next": [
+        {
+          "caption": "User picked [flow]",
+          "condition": "temp['skill-choice-ret-ryzz75qjwx'] == \"flow\"",
+          "node": "node-87d0"
+        },
+        {
+          "caption": "User picked [all]",
+          "condition": "temp['skill-choice-ret-ryzz75qjwx'] == \"all\"",
+          "node": "node-a635"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "c4a7000786",
+      "name": "node-a635",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "Design-Pattern-List.flow.json#entry"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "beb190e0ca",
+      "name": "node-87d0",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "Design-Patttern-Flow.flow.json#entry"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

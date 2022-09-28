@@ -1,0 +1,59 @@
+{
+  "locked": false,
+  "disabled": false,
+  "private": false,
+  "details": {
+    "website": "",
+    "phoneNumber": "",
+    "emailAddress": "",
+    "termsConditions": "",
+    "privacyPolicy": "",
+    "avatarUrl": "/api/v1/bots/c2_p2/media/mcqybjc3md4rj9qrhb31-foto_chatbot.jpg",
+    "coverPictureUrl": ""
+  },
+  "skillChoice": {
+    "matchNLU": true,
+    "matchNumbers": true
+  },
+  "skillSendEmail": {
+    "transportConnectionString": "<<change me>>"
+  },
+  "$schema": "../../bot.config.schema.json",
+  "description": "",
+  "active": true,
+  "version": "12.27.0",
+  "name": "c2p2",
+  "author": "Botpress, Inc.",
+  "license": "AGPL-3.0",
+  "imports": {
+    "modules": [],
+    "incomingMiddleware": [],
+    "outgoingMiddleware": []
+  },
+  "dialog": {
+    "timeoutInterval": "5m"
+  },
+  "logs": {
+    "expiration": "1 week"
+  },
+  "defaultLanguage": "en",
+  "languages": [
+    "en"
+  ],
+  "id": "c2_p2",
+  "isCloudBot": true,
+  "cloud": {
+    "clientId": "9a94665c-f264-476a-87b5-2f73726f40cd",
+    "clientSecret": "Jj_.E5vEz9rrxBMRbIVwbYSWoQ"
+  },
+  "pipeline_status": {
+    "current_stage": {
+      "id": "prod",
+      "promoted_on": "2022-09-09T21:35:45.296Z",
+      "promoted_by": "rafaeltoffoli4@gmail.com"
+    }
+  },
+  "nluModels": {
+    "en": "ca783fe4b6bc9f36.b2eeb23efb448373.7746.en"
+  }
+}

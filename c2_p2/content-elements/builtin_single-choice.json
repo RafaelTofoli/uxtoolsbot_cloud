@@ -1,0 +1,221 @@
+[
+  {
+    "id": "builtin_single-choice-qdgMXf",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Go to the {{user.lastdesign}} Design Pattern",
+          "value": "lastdesign"
+        },
+        {
+          "title": "Discover a new one",
+          "value": "new"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Would you like to see it again or look for a new one?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-09T21:53:41.630Z",
+    "modifiedOn": "2022-09-09T21:53:41.630Z"
+  },
+  {
+    "id": "builtin_single-choice-2kU6Ja",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Go to flow guide",
+          "value": "flow"
+        },
+        {
+          "title": "Choose a particular Design Pattern",
+          "value": "all"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "I recommend using our flow guide to discover the best Design Pattern for your project. But if you are already familiar with them, you can also choose one directly to learn more about it. "
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-09T22:03:01.723Z",
+    "modifiedOn": "2022-09-09T22:03:01.723Z"
+  },
+  {
+    "id": "builtin_single-choice-BIY5Q7",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "UX Acceptance Criteria",
+          "value": "Acceptance Criteria"
+        },
+        {
+          "title": "UX Tasks",
+          "value": "tasks"
+        },
+        {
+          "title": "Central UX Repository",
+          "value": "Central Repository"
+        },
+        {
+          "title": "UX Specific Repository",
+          "value": "Specific Repository"
+        },
+        {
+          "title": "UX Concern",
+          "value": "UX Concern"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Which one would you like to know more about it?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-09T22:09:27.764Z",
+    "modifiedOn": "2022-09-09T22:09:27.764Z"
+  },
+  {
+    "id": "builtin_single-choice-xqLYGp",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "It involves the whole project",
+          "value": "Whole project"
+        },
+        {
+          "title": "It is specific to a feature",
+          "value": "Specific"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": true,
+      "typing$en": true,
+      "text$en": "Alright, and what about the UX Information of your project that you want to evidence, is it more general and involves the whole project? Or more specific to a feature?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:13:05.992Z",
+    "modifiedOn": "2022-09-28T20:20:23.734Z"
+  },
+  {
+    "id": "builtin_single-choice-76JD1e",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "User Stories and Tasks",
+          "value": "User Stories and Tasks"
+        },
+        {
+          "title": "Documentation Repositories",
+          "value": "Documentation Repositories"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": true,
+      "typing$en": true,
+      "text$en": "The lack of evidence that you want to fulfill is more present in daily used artifacts, like User Stories and Tasks, or in documentation repositories?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:14:00.906Z",
+    "modifiedOn": "2022-09-28T20:20:09.983Z"
+  },
+  {
+    "id": "builtin_single-choice-1KBXGP",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "User Stories and Tasks",
+          "value": "User Stories and Tasks"
+        },
+        {
+          "title": "Documentation Repositories",
+          "value": "Documentation Repositories"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": true,
+      "typing$en": true,
+      "text$en": "The lack of evidence that you want to fulfill is more present in daily used artifacts, like <b>User Stories and Tasks</b>, or in <b>documentation repositories</b>?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:14:37.984Z",
+    "modifiedOn": "2022-09-10T00:14:37.984Z"
+  },
+  {
+    "id": "builtin_single-choice-UUYOyf",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "UX Requirements and Acceptance Criteria",
+          "value": "Acceptance Criteria"
+        },
+        {
+          "title": "Tasks",
+          "value": "Tasks"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "This information is more related to the UX Requirements and Acceptance Criteria inside the User Story or more related to the UX Work that needs to be accomplished by tasks?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:22:18.919Z",
+    "modifiedOn": "2022-09-28T20:19:27.759Z"
+  },
+  {
+    "id": "builtin_single-choice-HH8Hol",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "User Stories and Tasks",
+          "value": "User Stories and Tasks"
+        },
+        {
+          "title": "Documentation Repositories",
+          "value": "Documentation Repositories"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": true,
+      "typing$en": true,
+      "text$en": "The lack of evidence that you want to fulfill is more present in daily used artifacts, like User Stories and Tasks, or in documentation repositories?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:26:42.243Z",
+    "modifiedOn": "2022-09-28T20:19:53.232Z"
+  },
+  {
+    "id": "builtin_single-choice-KtTaSH",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Yes",
+          "value": "Yes"
+        },
+        {
+          "title": "No",
+          "value": "No"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Would you like to know more?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-10T00:30:04.090Z",
+    "modifiedOn": "2022-09-10T00:30:04.090Z"
+  }
+]
